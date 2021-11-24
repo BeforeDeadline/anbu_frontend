@@ -14,7 +14,8 @@ export const Container = styled.View`
   height: 64px;
   padding: 5px 10px;
 
-  background-color: pink;
+  background-color: ${(props) => props.backgroundColor};
+
   border-radius: 8px;
 `;
 
@@ -24,14 +25,12 @@ export const LeftContainer = styled.View`
 `;
 
 export const InfoWrapper = styled.View`
-  background-color: brown;
   margin-left: 10px;
 `;
 
 export const NameWrapper = styled.View`
   flex-direction: row;
   align-items: center;
-  background-color: "pink";
   margin-bottom: 5px;
 
   Text {

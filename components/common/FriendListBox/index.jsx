@@ -20,9 +20,10 @@ const FriendListBox = ({
   tags,
   iconBackgroundColor,
   iconColor,
+  backgroundColor = "#FAFAFA",
 }) => {
   return (
-    <Container>
+    <Container backgroundColor={backgroundColor}>
       <View>
         <LeftContainer>
           <ContactPersonIcon
