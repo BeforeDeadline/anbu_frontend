@@ -3,25 +3,26 @@ import { Touchable, Container, Contents } from "./style";
 
 const Tag = ({
   onPress,
-  padding = "3px 6px",
-  marginRight,
+  large = false,
+  marginRight = "0px",
+  marginLeft = "0px",
   backgroundColor = "#F3F5F7",
   fontColor = "#505458",
-  fontSize = "14",
+  fontSize = "14px",
   fontWeight = "400",
   children,
 }) => {
   return (
-    <Touchable marginRight={marginRight}>
+    <Touchable marginRight={marginRight} marginLeft={marginLeft}>
       <Container
         onPress={onPress}
         backgroundColor={backgroundColor}
-        padding={padding}
+        large={large}
       >
         <Contents
-          fontColor={fontColor}
           fontSize={fontSize}
           fontWeight={fontWeight}
+          fontColor={fontColor}
         >
           {children}
         </Contents>
