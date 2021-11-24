@@ -18,8 +18,8 @@ export default function App() {
   };
   return (
     <View style={styles.container}>
-      <Tag backgroundColor="red" fontColor="white" width="70px" height="40px">
-        하하
+      <Tag backgroundColor="red" large={true}>
+        슈가
       </Tag>
       <ContactPersonIcon backgroundColor="#CEF7E7" iconColor="#0BD588" />
       <DdayBox />
@@ -48,7 +48,7 @@ export default function App() {
           name={friend.name}
           contactCycle={friend.contactCycle}
           tags={friend.tags}
-          iconBackgroundColor="#E5E5E5"
+          iconBackgroundColor="#FFFFFF"
           iconColor="#0BD588"
         />
       ))}
