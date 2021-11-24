@@ -15,7 +15,7 @@ const Stack = createStackNavigator();
 const Navigation = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
         <Stack.Screen name="Home" component={BottomNavBar} />
         <Stack.Screen name="FriendList" component={FriendListByTagScreen} />
         <Stack.Screen name="NavFriend" component={NavFriendListScreen} />
