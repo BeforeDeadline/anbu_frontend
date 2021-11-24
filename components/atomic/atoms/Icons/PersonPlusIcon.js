@@ -16,9 +16,9 @@ const svgData = `
     </svg>
 `;
 
-const PersonIcon = () => {
+const PersonPlusIcon = () => {
   const Icon = <SvgXml xml={svgData} />;
   return Icon;
 };
 
-export default PersonIcon;
+export default PersonPlusIcon;
