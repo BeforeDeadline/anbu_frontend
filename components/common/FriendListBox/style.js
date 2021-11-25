@@ -16,8 +16,8 @@ export const Container = styled.View`
   margin-top: 5px;
 
   background-color: ${(props) => props.backgroundColor};
-
-  border-radius: 8px;
+  border-bottom-width: 1;
+  border-bottom-color: #717171;
 `;
 
 export const LeftContainer = styled.View`
