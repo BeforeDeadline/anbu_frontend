@@ -1,8 +1,7 @@
-import { Dimensions } from "react-native";
+import useGetClientWidth from "../../hooks/useGetClientWidth";
 import styled from "styled-components/native";
 
-const { width } = Dimensions.get("window");
-const CLIENT_WIDTH = width - 40;
+const CLIENT_WIDTH = useGetClientWidth() - 40;
 
 export const Header = styled.View`
   flex-direction: row;
@@ -21,18 +20,20 @@ export const Contents = styled.Text`
   color: #ffffff;
 `;
 
+export const TagTitleContainer = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  width: ${CLIENT_WIDTH};
+`;
+
 export const RowBox = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 
   width: ${(props) => props.width};
-`;
-
-export const TitleText = styled.Text`
-  font-size: 24px;
-  font-weight: 800;
-  color: #ffffff;
 `;
 
 export const SmallText = styled.Text`
