@@ -1,17 +1,15 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+
 import NavigationTitle from "../navigaton/NavigationTitle";
+import Layout from "../components/HomeComponents/Layout";
+import FriendListContainer from "../components/NavFriendListComponent/FriendListContainer";
 
 const NavFriendListScreen = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <Layout>
       <NavigationTitle title="navFriend" />
-      <Text>NavFriendListScreen</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.navigate("Anbu")}
-      />
-    </View>
+      <FriendListContainer />
+    </Layout>
   );
 };
 
