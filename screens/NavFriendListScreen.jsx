@@ -1,7 +1,7 @@
 import React from "react";
 
 import NavigationTitle from "../navigaton/NavigationTitle";
-import Layout from "../components/HomeComponents/Layout";
+import Layout from "../components/Layout";
 import FriendListContainer from "../components/NavFriendListComponent/FriendListContainer";
 
 const NavFriendListScreen = ({ navigation }) => {
