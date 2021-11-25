@@ -13,6 +13,7 @@ export const Container = styled.View`
   width: ${CLIENT_WIDTH};
   height: 64px;
   padding: 5px 10px;
+  margin-top: 5px;
 
   background-color: ${(props) => props.backgroundColor};
 

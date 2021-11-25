@@ -13,8 +13,7 @@ const titleList = {
   tag: "태그",
 };
 
-const NavigationTitle = ({ title, props }) => {
-  console.log("nav: ", title, props);
+const NavigationTitle = ({ title }) => {
   return (
     <Header>
       <Contents style={{ color: "white" }}>
