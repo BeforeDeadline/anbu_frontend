@@ -1,5 +1,5 @@
 import React from "react";
-import { View } from "react-native";
+import { View, TouchableOpacity } from "react-native";
 import LogoIcon from "../../components/atomic/atoms/Icons/LogoIcon";
 import AlarmIcon from "../../components/atomic/atoms/Icons/AlarmIcon";
 import TagIcon from "../../components/atomic/atoms/Icons/TagIcon";
@@ -13,7 +13,7 @@ const titleList = {
   tag: "태그",
 };
 
-const NavigationTitle = ({ title }) => {
+const NavigationTitle = ({ title, navigation }) => {
   return (
     <Header>
       <Contents style={{ color: "white" }}>
@@ -30,7 +30,13 @@ const NavigationTitle = ({ title }) => {
         {title === "home" && <AlarmIcon />}
         {title === "navFriend" && (
           <RowBox width="50px">
-            <TagIcon />
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("TagList");
+              }}
+            >
+              <TagIcon />
+            </TouchableOpacity>
             <PersonPlusIcon />
           </RowBox>
         )}

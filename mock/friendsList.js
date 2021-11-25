@@ -39,4 +39,24 @@ export const friendList = [
     contactCycle: 10,
     tags: ["연예인", "AOMG", "H1gher Music"],
   },
+  {
+    name: "박재범",
+    contactCycle: 10,
+    tags: ["연예인", "AOMG", "H1gher Music"],
+  },
+  {
+    name: "박재범",
+    contactCycle: 10,
+    tags: ["연예인", "AOMG", "H1gher Music"],
+  },
+  {
+    name: "박재범",
+    contactCycle: 10,
+    tags: ["연예인", "AOMG", "H1gher Music"],
+  },
+  {
+    name: "박재범",
+    contactCycle: 10,
+    tags: ["연예인", "AOMG", "H1gher Music"],
+  },
 ];

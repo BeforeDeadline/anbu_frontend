@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 
 import NavigationTitle from "../navigaton/NavigationTitle";
-import Layout from "../components/HomeComponents/Layout";
+import Layout from "../components/Layout";
 import GreetingBox from "../components/HomeComponents/GreetingBox";
 import EventBox from "../components/HomeComponents/EventBox";
 import AnbuBox from "../components/HomeComponents/AnbuBox";
