@@ -1,18 +1,21 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text } from "react-native";
 
 import NavigationTitle from "../navigaton/NavigationTitle";
+import Layout from "../components/HomeComponents/Layout";
+import GreetingBox from "../components/HomeComponents/GreetingBox";
+import EventBox from "../components/HomeComponents/EventBox";
+import AnbuBox from "../components/HomeComponents/AnbuBox";
 
 const HomeScreen = ({ navigation }) => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <Layout>
       <NavigationTitle title="home" />
-      <Text>Home!</Text>
-      <Button
-        title="Go to Details"
-        onPress={() => navigation.push("FriendList")}
-      />
-    </View>
+      <GreetingBox name="윤준서" />
+      <EventBox />
+      <AnbuBox type="anbu" />
+      <AnbuBox type="birthday" />
+    </Layout>
   );
 };
 
