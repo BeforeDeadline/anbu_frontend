@@ -7,7 +7,7 @@ import FriendListContainer from "../components/NavFriendListComponent/FriendList
 const NavFriendListScreen = ({ navigation }) => {
   return (
     <Layout>
-      <NavigationTitle title="navFriend" />
+      <NavigationTitle title="navFriend" navigation={navigation} />
       <FriendListContainer />
     </Layout>
   );
