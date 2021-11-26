@@ -4,6 +4,8 @@ export const Touchable = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 
+  margin: ${(props) => props.margin};
+
   width: ${(props) => props.width};
   height: ${(props) => props.height};
 

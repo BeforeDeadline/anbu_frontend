@@ -3,10 +3,16 @@ import { AntDesign } from "@expo/vector-icons";
 
 import { Container } from "../ContactPersonIcon/style";
 
-const ContactPersonIcon = ({ backgroundColor, iconColor }) => {
+const ContactPersonIcon = ({
+  width = "32px",
+  height = "32px",
+  backgroundColor,
+  iconColor,
+  size = 20,
+}) => {
   return (
-    <Container backgroundColor={backgroundColor}>
-      <AntDesign name="user" size={20} color={iconColor} />
+    <Container width={width} height={height} backgroundColor={backgroundColor}>
+      <AntDesign name="user" size={size} color={iconColor} />
     </Container>
   );
 };
