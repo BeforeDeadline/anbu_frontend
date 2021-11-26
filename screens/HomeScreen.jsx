@@ -1,8 +1,10 @@
 import React from "react";
-import { View, Text } from "react-native";
+
+import FloatingButton from "../components/atomic/atoms/FloatingButton";
 
 import NavigationTitle from "../navigaton/NavigationTitle";
 import Layout from "../components/Layout";
+
 import GreetingBox from "../components/HomeComponents/GreetingBox";
 import EventBox from "../components/HomeComponents/EventBox";
 import AnbuBox from "../components/HomeComponents/AnbuBox";
@@ -15,6 +17,7 @@ const HomeScreen = ({ navigation }) => {
       <EventBox />
       <AnbuBox type="anbu" />
       <AnbuBox type="birthday" />
+      <FloatingButton navigation={navigation} />
     </Layout>
   );
 };
