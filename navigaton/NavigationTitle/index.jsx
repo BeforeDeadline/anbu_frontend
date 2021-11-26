@@ -26,7 +26,13 @@ const NavigationTitle = ({ title, navigation }) => {
         )}
         {title === "anbu" && (
           <RowBox width="70px">
-            <ArrowIcon />
+            <TouchableOpacity
+              style={{ width: 25 }}
+              onPress={() => navigation.goBack()}
+            >
+              <ArrowIcon />
+            </TouchableOpacity>
+
             <CustomText fontSize="24px" fontWeight="800" fontColor="#FFFFFF">
               {titleList[title]}
             </CustomText>
