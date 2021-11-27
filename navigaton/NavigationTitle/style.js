@@ -9,7 +9,7 @@ export const Header = styled.View`
   justify-content: space-between;
   margin-top: 40px;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
   height: 55px;
   background-color: #474747;
 `;
@@ -25,7 +25,7 @@ export const TagTitleContainer = styled.View`
   align-items: center;
   justify-content: space-between;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
 `;
 
 export const RowBox = styled.View`

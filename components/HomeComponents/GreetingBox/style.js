@@ -6,7 +6,7 @@ const CLIENT_WIDTH = useGetClientWidth() - 40;
 
 export const Container = styled.View`
   flex: 0.5;
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
   height: 50px;
 `;
 

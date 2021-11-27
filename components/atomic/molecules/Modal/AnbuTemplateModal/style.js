@@ -18,7 +18,7 @@ export const ButtonContainer = styled.View`
   flex-direction: row;
   justify-content: space-between;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
 `;
 
 export const Touchable = styled.TouchableOpacity`

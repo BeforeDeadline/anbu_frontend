@@ -9,7 +9,7 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
   height: 36px;
 
   background-color: #ffffff;
@@ -23,5 +23,5 @@ export const InnerContainer = styled.View`
   align-items: center;
   justify-content: space-between;
 
-  width: ${CLIENT_INNER_WIDTH};
+  width: ${CLIENT_INNER_WIDTH}px;
 `;

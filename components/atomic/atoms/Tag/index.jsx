@@ -13,12 +13,12 @@ const Tag = ({
   children,
 }) => {
   return (
-    <Touchable marginRight={marginRight} marginLeft={marginLeft}>
-      <Container
-        onPress={onPress}
-        backgroundColor={backgroundColor}
-        large={large}
-      >
+    <Touchable
+      onPress={onPress}
+      marginRight={marginRight}
+      marginLeft={marginLeft}
+    >
+      <Container backgroundColor={backgroundColor} large={large}>
         <Contents
           fontSize={fontSize}
           fontWeight={fontWeight}

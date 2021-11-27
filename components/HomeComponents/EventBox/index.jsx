@@ -1,5 +1,4 @@
 import React from "react";
-import { Text } from "react-native";
 
 import RightArrowIcon from "../../atomic/atoms/Icons/RightArrowIcon";
 import ChocolateStickIcon from "../../atomic/atoms/Icons/ChocolateStickIcon";

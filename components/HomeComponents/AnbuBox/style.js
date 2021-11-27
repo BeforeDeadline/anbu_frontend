@@ -9,7 +9,7 @@ export const TitleBox = styled.View`
 
   margin-top: 20px;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
 `;
 
 export const TitleContents = styled.Text`

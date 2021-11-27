@@ -12,7 +12,7 @@ export const Container = styled.View`
 
 export const EventItemContainer = styled.View`
   justify-content: center;
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
   height: 56px;
 
   margin-top: 8px;
@@ -27,7 +27,7 @@ export const EventItemInnerContents = styled.View`
   align-items: center;
   justify-content: space-between;
 
-  width: ${EVENT_INNER_WIDTH};
+  width: ${EVENT_INNER_WIDTH}px;
 `;
 
 export const InnerText = styled.Text`

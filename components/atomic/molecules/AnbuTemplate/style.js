@@ -10,7 +10,8 @@ export const Container = styled.View`
   margin-top: 20px;
 `;
 
-export const TagContainer = styled.View`
+export const TagContainer = styled.ScrollView`
+  flex: 0.7;
   margin-top: 10px;
 `;
 

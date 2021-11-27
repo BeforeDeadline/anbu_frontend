@@ -18,5 +18,5 @@ export const Container = styled.View`
 
 export const ContentsBox = styled.View`
   flex: 1;
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
 `;
