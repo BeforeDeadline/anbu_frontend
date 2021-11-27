@@ -4,6 +4,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 
 import NavigationTitle from "./NavigationTitle";
 
+import LoginScreen from "../screens/LoginScreen";
 import NavFriendListScreen from "../screens/NavFriendListScreen";
 import BottomNavBar from "./BottomNavBar";
 import FriendListByTagScreen from "../screens/FriendListByTagScreen";
@@ -16,6 +17,7 @@ const Navigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Login" component={LoginScreen} />
         <Stack.Screen name="Home" component={BottomNavBar} />
         <Stack.Screen name="FriendList" component={FriendListByTagScreen} />
         <Stack.Screen name="NavFriend" component={NavFriendListScreen} />

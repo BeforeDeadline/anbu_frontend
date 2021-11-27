@@ -5,10 +5,9 @@ import { greetingList, bodyList, finishList } from "../mock/template";
 import NavigationTitle from "../navigaton/NavigationTitle";
 import Layout from "../components/Layout";
 
-import TextInput from "../components/atomic/atoms/TextInput";
-
 import DropDownTabBar from "../components/atomic/molecules/DropDownTabBar";
 import AnbuTemplate from "../components/atomic/molecules/AnbuTemplate";
+import SubmitInput from "../components/atomic/molecules/SubmitInput";
 
 const AnbuTemplateScreen = ({ navigation }) => {
   const [totalTemplate, setTotalTemplate] = useState([]);
@@ -52,7 +51,7 @@ const AnbuTemplateScreen = ({ navigation }) => {
         totalTemplate={totalTemplate}
         setTotalTemplate={setTotalTemplate}
       />
-      <TextInput
+      <SubmitInput
         placeholder="안부를 골라보세요"
         onChange={setText}
         value={text}
