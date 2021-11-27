@@ -2,7 +2,6 @@ import React from "react";
 
 import Tag from "../../atoms/Tag";
 import ContactCycleText from "../../atoms/ContactCycleText";
-import TextButton from "../../atoms/TextButton";
 import MoreButton from "../../atoms/MoreButton";
 
 import { Container, RightBox } from "./style";

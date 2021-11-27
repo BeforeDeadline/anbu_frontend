@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableOpacity } from "react-native";
+import { Linking } from "react-native";
 
 import CustomText from "../../../atoms/Text";
 import Tag from "../../../atoms/Tag";
@@ -24,17 +24,22 @@ import { Touchable } from "../../../atoms/TextButton/style";
 
 const AnbuModal = ({
   randomNum,
-  friendInfo,
   navigation,
+  info,
   toggleBottomNavigationView,
 }) => {
   const onPress = () => {
-    navigation.navigate("AnbuTemplate");
+    navigation.navigate("AnbuTemplate", { phoneNumber: info.phoneNumber });
     toggleBottomNavigationView();
   };
 
+  const onPressCall = () => {
+    const url = `tel://${info.phoneNumber}`;
+    Linking.openURL(url);
+  };
+
   return (
-    <Container height="200">
+    <Container height="200px">
       <ContentsBox>
         <HeaderContainer>
           <FriendContentsContainer>
@@ -54,16 +59,16 @@ const AnbuModal = ({
                   fontWeight="600"
                   fontColor="#000000"
                 >
-                  {friendInfo.name}
+                  {info.name}
                 </CustomText>
-                {friendInfo.tags.map((tag, idx) => (
+                {info.tags.map((tag, idx) => (
                   <Tag key={idx} large={true} marginLeft="4px">
                     {tag}
                   </Tag>
                 ))}
               </FriendContents>
               <CustomText fontColor="#B5B5B5" fontSize="14px" fontWeight="400">
-                {friendInfo.contactCycle}일마다 연락해요
+                {info.contactCycle}일마다 연락해요
               </CustomText>
             </FriendColumnBox>
           </FriendContentsContainer>
@@ -77,6 +82,7 @@ const AnbuModal = ({
               margin="0px"
               borderRadius="8px"
               backgroundColor="#EBEBEB"
+              onPress={onPressCall}
             >
               <PhoneIcon />
             </Touchable>

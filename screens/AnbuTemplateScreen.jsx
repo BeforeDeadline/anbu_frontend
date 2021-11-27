@@ -9,12 +9,13 @@ import DropDownTabBar from "../components/atomic/molecules/DropDownTabBar";
 import AnbuTemplate from "../components/atomic/molecules/AnbuTemplate";
 import SubmitInput from "../components/atomic/molecules/SubmitInput";
 
-const AnbuTemplateScreen = ({ navigation }) => {
+const AnbuTemplateScreen = ({ navigation, route }) => {
   const [totalTemplate, setTotalTemplate] = useState([]);
   const [text, setText] = useState("Useless Text");
   const [greetingValue, setGreetingValue] = useState([]);
   const [bodyValue, setBodyValue] = useState([]);
   const [finalValue, setFinalValue] = useState([]);
+  const phoneNumber = route.params?.phoneNumber;
 
   useEffect(() => {
     if (totalTemplate) {
@@ -53,6 +54,7 @@ const AnbuTemplateScreen = ({ navigation }) => {
       />
       <SubmitInput
         placeholder="안부를 골라보세요"
+        phoneNumber={phoneNumber}
         onChange={setText}
         value={text}
       />

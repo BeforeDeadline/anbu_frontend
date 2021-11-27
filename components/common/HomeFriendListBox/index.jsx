@@ -1,7 +1,7 @@
 import React from "react";
 import ContactCycleText from "../../atomic/atoms/ContactCycleText";
 import ContactPersonIcon from "../../atomic/atoms/ContactPersonIcon";
-import { View, Text } from "react-native";
+import { View } from "react-native";
 
 import Tag from "../../atomic/atoms/Tag";
 
