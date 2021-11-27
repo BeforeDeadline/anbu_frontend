@@ -13,6 +13,7 @@ import {
   TagWrapper,
 } from "../FriendListBox/style";
 import { SmallText, MoreButton } from "./style";
+import CustomText from "../../atomic/atoms/Text";
 
 const HomeFriendListBox = ({
   name,
@@ -21,9 +22,13 @@ const HomeFriendListBox = ({
   iconBackgroundColor,
   iconColor,
   backgroundColor = "#474747",
+  toggleBottomNavigationView,
 }) => {
   return (
-    <Container backgroundColor={backgroundColor}>
+    <Container
+      backgroundColor={backgroundColor}
+      onPress={() => toggleBottomNavigationView()}
+    >
       <View>
         <LeftContainer>
           <ContactPersonIcon
@@ -32,7 +37,9 @@ const HomeFriendListBox = ({
           />
           <InfoWrapper>
             <NameWrapper>
-              <Text>{name}</Text>
+              <CustomText fontColor="#FFFFFF" fontSize="14px" fontWeight="500">
+                {name}
+              </CustomText>
               {contactCycle === 0 ? (
                 <Tag
                   backgroundColor="#CEF7E7"

@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 const { width } = Dimensions.get("window");
 const CLIENT_WIDTH = width - 40;
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;

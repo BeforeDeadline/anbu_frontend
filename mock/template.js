@@ -1,14 +1,20 @@
 export const greetingList = [
   ["주말동안 행복한 시간 되셨나요?", "잘지내셨어요?"],
-  ["하이", "잘지내셨어요?"],
+  ["하이", "잘지내셨어요?", "gggggg"],
+  ["하이", "잘지내셨어요?", "gggggg"],
+  ["하이", "잘지내셨어요?", "gggggg"],
 ];
 
 export const bodyList = [
   ["풍성한 한가위 보내세요", "zzzzzzz"],
   ["ggggggggggggg", "4444ggg"],
+  ["ggggggggggggg", "4444ggg"],
+  ["ggggggggggggg", "4444ggg"],
 ];
 
 export const finishList = [
+  ["풍성한 한가위 보내세요", "zzzzzzz"],
+  ["풍성한 한가위 보내세요", "zzzzzzz"],
   ["풍성한 한가위 보내세요", "zzzzzzz"],
   ["ggggggggggggg", "4444ggg"],
 ];

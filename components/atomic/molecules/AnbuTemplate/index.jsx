@@ -28,11 +28,11 @@ const AnbuTemplate = ({ title, templateList }) => {
       </CustomText>
       <TagContainer>
         <RowContainer>
-          {templateList[0].map((item) => (
+          {templateList[0].map((item, idx) => (
             <Tag
               large={true}
-              backgroundColor="#CEF7E7"
-              fontColor="#0BD588"
+              backgroundColor={idx % 3 !== 1 ? "#FFFFFF" : "#CEF7E7"}
+              fontColor={idx % 3 !== 1 ? "#3C3C3C" : "#0BD588"}
               marginRight="5px"
             >
               {item}
@@ -40,11 +40,35 @@ const AnbuTemplate = ({ title, templateList }) => {
           ))}
         </RowContainer>
         <RowContainer>
-          {templateList[1].map((item) => (
+          {templateList[1].map((item, idx) => (
             <Tag
               large={true}
-              backgroundColor="#CEF7E7"
-              fontColor="#0BD588"
+              backgroundColor={idx % 3 !== 0 ? "#FFFFFF" : "#CEF7E7"}
+              fontColor={idx % 3 !== 0 ? "#3C3C3C" : "#0BD588"}
+              marginRight="5px"
+            >
+              {item}
+            </Tag>
+          ))}
+        </RowContainer>
+        <RowContainer>
+          {templateList[2].map((item, idx) => (
+            <Tag
+              large={true}
+              backgroundColor={idx % 3 !== 2 ? "#FFFFFF" : "#CEF7E7"}
+              fontColor={idx % 3 !== 2 ? "#3C3C3C" : "#0BD588"}
+              marginRight="5px"
+            >
+              {item}
+            </Tag>
+          ))}
+        </RowContainer>
+        <RowContainer>
+          {templateList[3].map((item, idx) => (
+            <Tag
+              large={true}
+              backgroundColor={idx % 3 !== 0 ? "#FFFFFF" : "#CEF7E7"}
+              fontColor={idx % 3 !== 0 ? "#3C3C3C" : "#0BD588"}
               marginRight="5px"
             >
               {item}
