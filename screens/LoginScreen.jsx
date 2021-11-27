@@ -26,7 +26,6 @@ const LoginScreen = ({ navigation }) => {
     };
 
     const data = await login(user);
-    console.log(data);
     setData(data);
   };
 
