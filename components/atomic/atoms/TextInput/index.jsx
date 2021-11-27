@@ -1,11 +1,23 @@
 import React from "react";
 
-import { Container, StyledTextInput } from "./style";
+import CustomText from "../Text";
 
-const TextInput = ({ placeHolder = "" }) => {
+import { Container, SubmitButton, StyledTextInput } from "./style";
+
+const TextInput = ({ placeholder = "", value, onChange }) => {
   return (
     <Container>
-      <StyledTextInput placeholder={placeHolder} />
+      <StyledTextInput
+        placeholder={placeholder}
+        multiline={true}
+        value={value}
+        onChangeText={(e) => onChange(e)}
+      />
+      <SubmitButton>
+        <CustomText fontColor="#0BD588" fontSize="14px" fontWeight="600">
+          전송
+        </CustomText>
+      </SubmitButton>
     </Container>
   );
 };
