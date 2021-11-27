@@ -10,6 +10,7 @@ const Modal = ({
   type,
   randomNum,
   visible,
+  info,
   toggleBottomNavigationView,
   navigation,
 }) => {
@@ -24,6 +25,7 @@ const Modal = ({
           randomNum={randomNum}
           friendInfo={friendInfo}
           navigation={navigation}
+          info={info}
           toggleBottomNavigationView={toggleBottomNavigationView}
         />
       )}
