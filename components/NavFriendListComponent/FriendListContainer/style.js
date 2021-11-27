@@ -13,7 +13,7 @@ export const InfoDescriptionBox = styled.View`
   justify-content: space-between;
   margin-bottom: 10px;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
 `;
 
 export const ScrollViewContainer = styled.ScrollView`

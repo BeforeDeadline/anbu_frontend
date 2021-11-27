@@ -1,22 +1,21 @@
-import { Dimensions } from "react-native";
+import useGetClientWidth from "../../../hooks/useGetClientWidth";
 
 import styled from "styled-components/native";
 
-const { width } = Dimensions.get("window");
-const CLIENT_WIDTH = width - 40;
+const CLIENT_WIDTH = useGetClientWidth() - 40;
 
 export const Container = styled.TouchableOpacity`
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
 
-  width: ${CLIENT_WIDTH};
+  width: ${CLIENT_WIDTH}px;
   height: 64px;
   padding: 5px 10px;
   margin-top: 5px;
 
   background-color: ${(props) => props.backgroundColor};
-  border-bottom-width: 1;
+  border-bottom-width: 1px;
   border-bottom-color: #717171;
 `;
 

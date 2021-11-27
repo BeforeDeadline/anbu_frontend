@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View } from "react-native";
 
 import MailBoxIcon from "../../atomic/atoms/Icons/MailBoxIcon";
 import CakeIcon from "../../atomic/atoms/Icons/CakeIcon";
