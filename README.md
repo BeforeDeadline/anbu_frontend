@@ -13,3 +13,4 @@
 <br />
 
 ## 2. 시스템 아키텍처
+![Frame 156](https://user-images.githubusercontent.com/28842641/143722941-b0e1930d-b9a1-47e4-a1d5-96398c92a5f3.png)
